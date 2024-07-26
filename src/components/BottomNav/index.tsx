@@ -1,22 +1,30 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Gs } from "../../../assets/styles/GlobalStyle";
 import { colors } from "../../../assets/styles/Colors";
 
 export default function BottomNav(): JSX.Element {
   return (
     <View
-      style={[Gs.flexRow, Gs.justifyCenter, Gs.itemsCenter, styles.container]}
+      style={[Gs.flexRow, Gs.justifyBetween, Gs.itemsCenter, styles.container]}
     >
-      <View style={styles.discoverContainer}>
-        <Image
-          style={styles.imageMargin}
-          source={require("../../../assets/icons/discover.png")}
-        />
-        <Text style={styles.discoverText}>Discover</Text>
+      <View>
+        <TouchableOpacity style={styles.discoverContainer}>
+          <Image
+            style={styles.imageMargin}
+            source={require("../../../assets/icons/discover.png")}
+          />
+          <Text style={styles.discoverText}>Discover</Text>
+        </TouchableOpacity>
       </View>
-      <Image source={require("../../../assets/icons/messages.png")} />
-      <Image source={require("../../../assets/icons/payment.png")} />
-      <Image source={require("../../../assets/icons/settings.png")} />
+      <TouchableOpacity>
+        <Image source={require("../../../assets/icons/messages.png")} />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Image source={require("../../../assets/icons/payment.png")} />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Image source={require("../../../assets/icons/settings.png")} />
+      </TouchableOpacity>
     </View>
   );
 }

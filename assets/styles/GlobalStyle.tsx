@@ -7,15 +7,15 @@ export const Gs = StyleSheet.create({
   },
   font400: {
     fontWeight: "400",
-    // fontFamily: "Poppins-Regular",
+    // fontFamily: "Poppins_400Regular",
   },
   font600: {
     fontWeight: "600",
-    // fontFamily: "Poppins-SemiBold",
+    // fontFamily: "Poppins_600SemiBold",
   },
   font700: {
     fontWeight: "700",
-    // fontFamily: "Poppins-Bold",
+    // fontFamily: "Poppins_700Bold",
   },
   textBlack: {
     color: colors.black,
@@ -44,27 +44,27 @@ export const Gs = StyleSheet.create({
   h1: {
     fontSize: 22,
     fontWeight: "700",
-    // fontFamily: "Poppins-Bold",
+    // fontFamily: "Poppins_700Bold",
   },
   h2: {
     fontSize: 18,
     fontWeight: "700",
-    // fontFamily: "Poppins-Bold",
+    // fontFamily: "Poppins_700Bold",
   },
   h3: {
     fontSize: 16,
     fontWeight: "700",
-    // fontFamily: "Poppins-Bold",
+    // fontFamily: "Poppins_700Bold",
   },
   h4: {
     fontSize: 14,
     fontWeight: "600",
-    // fontFamily: "Poppins-SemiBold",
+    // fontFamily: "Poppins_600SemiBold",
   },
   h5: {
     fontSize: 12,
     fontWeight: "600",
-    // fontFamily: "Poppins-SemiBold",
+    // fontFamily: "Poppins_600SemiBold",
   },
   cornerXS: {
     borderTopLeftRadius: 8,

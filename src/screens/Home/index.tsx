@@ -5,6 +5,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 import { Gs } from "../../../assets/styles/GlobalStyle";
@@ -71,11 +72,15 @@ export default function Home(): JSX.Element {
           </View>
         </View>
         <View style={[Gs.flexRow, Gs.itemsCenter]}>
-          <Image
-            style={styles.marginStyle}
-            source={require("../../../assets/icons/gift.png")}
-          />
-          <Image source={require("../../../assets/icons/notification.png")} />
+          <TouchableOpacity>
+            <Image
+              style={styles.marginStyle}
+              source={require("../../../assets/icons/gift.png")}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image source={require("../../../assets/icons/notification.png")} />
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -170,6 +175,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderBottomLeftRadius: 32,
     borderBottomRightRadius: 32,
+    elevation: 1,
   },
   paddingStyle: {
     paddingHorizontal: 24,

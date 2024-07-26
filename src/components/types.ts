@@ -13,3 +13,24 @@ export type NewsWorthyItemPropsType = {
   image: ImageSourcePropType;
   onPress: () => void;
 };
+
+export type HeaderPropsType = {
+  title: string;
+  subTitle: string;
+  showRightButton?: ImageSourcePropType;
+};
+
+export type ButtonPrimaryPropsType = {
+  title: string;
+  icon: ImageSourcePropType;
+  onPress: () => void;
+  customStyle?: any;
+};
+
+export type CardDetailPropsType = {
+  desc?: string;
+  title: string;
+  icon: ImageSourcePropType;
+  rating: string;
+  thumbnail: ImageSourcePropType;
+};
