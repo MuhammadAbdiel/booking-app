@@ -39,13 +39,13 @@ const styles = StyleSheet.create({
   },
   discoverContainer: {
     ...Gs.flexRow,
-    ...Gs.font600,
     ...Gs.cornerMD,
     paddingHorizontal: 14,
     paddingVertical: 8,
     backgroundColor: colors.secondary,
   },
   discoverText: {
+    ...Gs.font600,
     color: colors.primary,
   },
 });
